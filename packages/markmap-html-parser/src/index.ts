@@ -50,6 +50,7 @@ export type IHtmlParserSelectorRules = Record<
 export interface IHtmlParserOptions {
   selector: string;
   selectorRules: IHtmlParserSelectorRules;
+  lossless: boolean;
 }
 
 const defaultSelectorRules: IHtmlParserSelectorRules = {
@@ -88,6 +89,7 @@ const defaultSelectorRules: IHtmlParserSelectorRules = {
 export const defaultOptions: IHtmlParserOptions = {
   selector: 'h1,h2,h3,h4,h5,h6,ul,ol,li,table,pre,p>img:only-child',
   selectorRules: defaultSelectorRules,
+  lossless: false
 };
 
 const MARKMAP_COMMENT_PREFIX = 'markmap: ';
@@ -154,7 +156,13 @@ export function parseHtml(html: string, opts?: Partial<IHtmlParserOptions>) {
         parent.childrenLevel === Levels.None ||
         parent.childrenLevel > node.level
       ) {
-        parent.children = [];
+        if (options.lossless) {
+          parent.children = parent.children.map((child) => {
+            child.level = node.level;
+            return child;
+          });
+        }
+        else parent.children = [];
         parent.childrenLevel = node.level;
       }
       if (parent.childrenLevel === node.level) {
@@ -212,7 +220,7 @@ export function parseHtml(html: string, opts?: Partial<IHtmlParserOptions>) {
         }
         return;
       }
-      if (skippingHeading > Levels.None && level > skippingHeading) return;
+      if (!options.lossless && skippingHeading > Levels.None && level > skippingHeading) return;
       if (!$child.is(options.selector)) return;
       skippingHeading = Levels.None;
       const isHeading = level <= Levels.H6;

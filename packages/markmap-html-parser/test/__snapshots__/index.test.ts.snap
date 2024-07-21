@@ -62,6 +62,68 @@ exports[`li > pre 2`] = `
 }
 `;
 
+exports[`lossless 1`] = `
+{
+  "children": [
+    {
+      "children": [
+        {
+          "children": [],
+          "childrenLevel": 0,
+          "html": "Hi 3",
+          "id": 2,
+          "level": 2,
+          "parent": 1,
+          "tag": "h3",
+        },
+        {
+          "children": [],
+          "childrenLevel": 0,
+          "html": "Hi 2",
+          "id": 3,
+          "level": 2,
+          "parent": 1,
+          "tag": "h2",
+        },
+      ],
+      "childrenLevel": 2,
+      "html": "Hi 1",
+      "id": 1,
+      "level": 1,
+      "parent": 0,
+      "tag": "h1",
+    },
+  ],
+  "childrenLevel": 1,
+  "html": "",
+  "id": 0,
+  "level": 0,
+  "parent": 0,
+  "tag": "",
+}
+`;
+
+exports[`lossless 2`] = `
+{
+  "children": [
+    {
+      "children": [
+        {
+          "children": [],
+          "content": "Hi 3",
+        },
+        {
+          "children": [],
+          "content": "Hi 2",
+        },
+      ],
+      "content": "Hi 1",
+    },
+  ],
+  "content": "",
+}
+`;
+
 exports[`parseHtml 1`] = `
 {
   "children": [

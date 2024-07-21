@@ -79,3 +79,13 @@ test('li > pre', () => {
   expect(root).toMatchSnapshot();
   expect(convertNode(root)).toMatchSnapshot();
 });
+
+test('lossless', () => {
+  const root = parseHtml(`<body>
+<h1>Hi 1</h1>
+<h3>Hi 3</h3>
+<h2>Hi 2</h2>
+</body>`, {lossless: true});
+  expect(root).toMatchSnapshot();
+  expect(convertNode(root)).toMatchSnapshot();
+});
