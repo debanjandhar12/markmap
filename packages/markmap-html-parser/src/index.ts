@@ -89,7 +89,7 @@ const defaultSelectorRules: IHtmlParserSelectorRules = {
 export const defaultOptions: IHtmlParserOptions = {
   selector: 'h1,h2,h3,h4,h5,h6,ul,ol,li,table,pre,p>img:only-child',
   selectorRules: defaultSelectorRules,
-  lossless: false
+  lossless: false,
 };
 
 const MARKMAP_COMMENT_PREFIX = 'markmap: ';
@@ -161,8 +161,7 @@ export function parseHtml(html: string, opts?: Partial<IHtmlParserOptions>) {
             child.level = node.level;
             return child;
           });
-        }
-        else parent.children = [];
+        } else parent.children = [];
         parent.childrenLevel = node.level;
       }
       if (parent.childrenLevel === node.level) {
@@ -220,7 +219,12 @@ export function parseHtml(html: string, opts?: Partial<IHtmlParserOptions>) {
         }
         return;
       }
-      if (!options.lossless && skippingHeading > Levels.None && level > skippingHeading) return;
+      if (
+        !options.lossless &&
+        skippingHeading > Levels.None &&
+        level > skippingHeading
+      )
+        return;
       if (!$child.is(options.selector)) return;
       skippingHeading = Levels.None;
       const isHeading = level <= Levels.H6;
