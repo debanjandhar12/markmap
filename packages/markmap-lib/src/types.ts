@@ -1,7 +1,13 @@
 import type MarkdownIt from 'markdown-it';
-import { CSSItem, Hook, IPureNode, JSItem, UrlBuilder } from 'markmap-common';
-import { IHtmlParserOptions } from 'markmap-html-parser';
-import { IMarkmapJSONOptions as IMarkmapJSONOptionsForView } from 'markmap-view';
+import {
+  CSSItem,
+  Hook,
+  IPureNode,
+  JSItem,
+  UrlBuilder,
+} from '@debanjandhar12/markmap-common';
+import { IHtmlParserOptions } from '@debanjandhar12/markmap-html-parser';
+import { IMarkmapJSONOptions as IMarkmapJSONOptionsForView } from '@debanjandhar12/markmap-view';
 
 export interface ITransformHooks {
   transformer: ITransformer;

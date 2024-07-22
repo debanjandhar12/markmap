@@ -1,5 +1,5 @@
 import { AnyNode, Cheerio, CheerioAPI, Element, load } from 'cheerio';
-import { IPureNode, walkTree } from 'markmap-common';
+import { IPureNode, walkTree } from '@debanjandhar12/markmap-common';
 
 export enum Levels {
   None,

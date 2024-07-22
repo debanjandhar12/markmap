@@ -1,7 +1,7 @@
 import { createWriteStream } from 'fs';
 import { mkdir, stat } from 'fs/promises';
-import { Transformer } from 'markmap-lib';
-import { baseJsPaths } from 'markmap-render';
+import { Transformer } from '@debanjandhar12/markmap-lib';
+import { baseJsPaths } from '@debanjandhar12/markmap-render';
 import { dirname, resolve } from 'path';
 import { Readable } from 'stream';
 import { finished } from 'stream/promises';

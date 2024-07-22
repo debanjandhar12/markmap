@@ -1,6 +1,14 @@
 import type MarkdownIt from 'markdown-it';
-import { CSSItem, IPureNode, JSItem, UrlBuilder } from 'markmap-common';
-import { IHtmlParserOptions, buildTree } from 'markmap-html-parser';
+import {
+  CSSItem,
+  IPureNode,
+  JSItem,
+  UrlBuilder,
+} from '@debanjandhar12/markmap-common';
+import {
+  IHtmlParserOptions,
+  buildTree,
+} from '@debanjandhar12/markmap-html-parser';
 import { initializeMarkdownIt } from './markdown-it';
 import { plugins as availablePlugins, createTransformHooks } from './plugins';
 import {

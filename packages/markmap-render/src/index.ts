@@ -8,8 +8,8 @@ import {
   buildJSItem,
   persistCSS,
   persistJS,
-} from 'markmap-common';
-import { IMarkmapJSONOptions } from 'markmap-view';
+} from '@debanjandhar12/markmap-common';
+import { IMarkmapJSONOptions } from '@debanjandhar12/markmap-view';
 
 export const template = process.env.TEMPLATE || '';
 

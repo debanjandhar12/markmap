@@ -6,9 +6,9 @@ const getVersion = versionLoader(import.meta.url);
 export default defineConfig({
   define: {
     'process.env.D3_VERSION': JSON.stringify(await getVersion('d3')),
-    'process.env.LIB_VERSION': JSON.stringify(await getVersion('markmap-lib')),
-    'process.env.VIEW_VERSION': JSON.stringify(await getVersion('markmap-view')),
-    'process.env.TOOLBAR_VERSION': JSON.stringify(await getVersion('markmap-toolbar')),
+    'process.env.LIB_VERSION': JSON.stringify(await getVersion('@debanjandhar12/markmap-lib')),
+    'process.env.VIEW_VERSION': JSON.stringify(await getVersion('@debanjandhar12/markmap-view')),
+    'process.env.TOOLBAR_VERSION': JSON.stringify(await getVersion('@debanjandhar12/markmap-toolbar')),
   },
   build: {
     emptyOutDir: false,

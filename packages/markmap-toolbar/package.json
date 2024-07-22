@@ -1,6 +1,6 @@
 {
-  "name": "markmap-toolbar",
-  "version": "0.17.0",
+  "name": "@debanjandhar12/markmap-toolbar",
+  "version": "0.17.0-mod.3",
   "description": "Extensible toolbar for markmap",
   "author": "Gerald <gera2ld@live.com>",
   "license": "MIT",
@@ -31,11 +31,11 @@
   },
   "typings": "dist/index.d.ts",
   "peerDependencies": {
-    "markmap-common": "*"
+    "@debanjandhar12/markmap-common": "*"
   },
   "devDependencies": {
-    "markmap-common": "workspace:*",
-    "markmap-view": "workspace:*"
+    "@debanjandhar12/markmap-common": "workspace:*",
+    "@debanjandhar12/markmap-view": "workspace:*"
   },
   "dependencies": {
     "@babel/runtime": "^7.22.6",

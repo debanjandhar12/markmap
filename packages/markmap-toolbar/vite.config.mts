@@ -10,7 +10,7 @@ const configEs = defineConfig({
       formats: ['es'],
     },
     rollupOptions: {
-      external: ['markmap-common'],
+      external: ['@debanjandhar12/markmap-common'],
     },
   },
 });

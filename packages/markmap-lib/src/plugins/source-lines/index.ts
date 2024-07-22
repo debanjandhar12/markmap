@@ -1,4 +1,4 @@
-import { wrapFunction } from 'markmap-common';
+import { wrapFunction } from '@debanjandhar12/markmap-common';
 import { ITransformHooks } from '../../types';
 import { definePlugin } from '../base';
 

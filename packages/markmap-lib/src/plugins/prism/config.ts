@@ -1,4 +1,4 @@
-import { buildJSItem, buildCSSItem } from 'markmap-common';
+import { buildJSItem, buildCSSItem } from '@debanjandhar12/markmap-common';
 
 export const name = 'prism';
 

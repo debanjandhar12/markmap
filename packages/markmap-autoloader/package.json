@@ -1,6 +1,6 @@
 {
-  "name": "markmap-autoloader",
-  "version": "0.17.0",
+  "name": "@debanjandhar12/markmap-autoloader",
+  "version": "0.17.0-mod.3",
   "description": "Load markmaps automatically in HTML",
   "author": "Gerald <gera2ld@live.com>",
   "license": "MIT",
@@ -34,12 +34,12 @@
     "dist"
   ],
   "peerDependencies": {
-    "markmap-common": "*"
+    "@debanjandhar12/markmap-common": "*"
   },
   "devDependencies": {
-    "markmap-common": "workspace:*",
-    "markmap-lib": "workspace:*",
-    "markmap-toolbar": "workspace:*",
-    "markmap-view": "workspace:*"
+    "@debanjandhar12/markmap-common": "workspace:*",
+    "@debanjandhar12/markmap-lib": "workspace:*",
+    "@debanjandhar12/markmap-toolbar": "workspace:*",
+    "@debanjandhar12/markmap-view": "workspace:*"
   }
 }

@@ -1,4 +1,4 @@
-import { Hook } from 'markmap-common';
+import { Hook } from '@debanjandhar12/markmap-common';
 import { ITransformer, ITransformHooks, ITransformPlugin } from '../types';
 
 export function createTransformHooks(

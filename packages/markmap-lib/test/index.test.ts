@@ -1,11 +1,10 @@
-import { wrapFunction } from 'markmap-common';
+import { wrapFunction } from '@debanjandhar12/markmap-common';
 import { Transformer, builtInPlugins } from '../src/index';
 
 test('plugins', () => {
   const transformer = new Transformer();
   expect(transformer.plugins.map((plugin) => plugin.name)).toEqual([
     'frontmatter',
-    'katex',
     'hljs',
     'npmUrl',
     'checkbox',
@@ -66,20 +65,6 @@ markmap:
 `.replace(/\n/g, '\r\n'),
   );
   expect(result).toMatchSnapshot();
-});
-
-test('content with only katex enabled', () => {
-  const transformer = new Transformer();
-  const result = transformer.transform(`\
----
-markmap:
-  color: blue
----
-
-- $x = {-b \pm \sqrt{b^2-4ac} \over 2a}$
-`);
-  expect(result).toMatchSnapshot();
-  expect(transformer.getUsedAssets(result.features)).toMatchSnapshot();
 });
 
 test('tables', () => {

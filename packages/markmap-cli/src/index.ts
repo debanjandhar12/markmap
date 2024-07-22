@@ -5,19 +5,19 @@ import { Command } from 'commander';
 import open from 'open';
 import updateNotifier from 'update-notifier';
 import { readPackageUp } from 'read-package-up';
-import { CSSItem, JSItem, buildJSItem } from 'markmap-common';
+import { CSSItem, JSItem, buildJSItem } from '@debanjandhar12/markmap-common';
 import {
   Transformer,
   type IMarkmapCreateOptions,
   type IAssets,
-} from 'markmap-lib';
-import { baseJsPaths, fillTemplate } from 'markmap-render';
+} from '@debanjandhar12/markmap-lib';
+import { baseJsPaths, fillTemplate } from '@debanjandhar12/markmap-render';
 import { ASSETS_PREFIX, addToolbar, config, localProvider } from './util';
 import { IDevelopOptions } from './types';
 import { develop } from './dev-server';
 import { fetchAssets } from './fetch-assets';
 
-export * from 'markmap-lib';
+export * from '@debanjandhar12/markmap-lib';
 export * from './types';
 export { config, develop, fetchAssets };
 

@@ -1,4 +1,4 @@
-import { INode } from 'markmap-common';
+import { INode } from '@debanjandhar12/markmap-common';
 import { FlextreeNode } from 'd3-flextree';
 
 export interface IMarkmapState {

@@ -1,4 +1,4 @@
-import { loadJS, noop } from 'markmap-common';
+import { loadJS, noop } from '@debanjandhar12/markmap-common';
 import { ITransformHooks } from '../../types';
 import { definePlugin } from '../base';
 import { config, name } from './config';

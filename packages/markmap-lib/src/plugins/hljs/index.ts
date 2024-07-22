@@ -1,5 +1,5 @@
 import hljs from 'highlight.js';
-import { noop } from 'markmap-common';
+import { noop } from '@debanjandhar12/markmap-common';
 import { ITransformHooks } from '../../types';
 import { definePlugin } from '../base';
 import { name, config } from './config';

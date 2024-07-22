@@ -5,9 +5,9 @@ import { createReadStream } from 'fs';
 import { readFile, stat } from 'fs/promises';
 import { Hono } from 'hono';
 import { getMimeType } from 'hono/utils/mime';
-import { IDeferred, INode, defer } from 'markmap-common';
-import { Transformer } from 'markmap-lib';
-import { fillTemplate } from 'markmap-render';
+import { IDeferred, INode, defer } from '@debanjandhar12/markmap-common';
+import { Transformer } from '@debanjandhar12/markmap-lib';
+import { fillTemplate } from '@debanjandhar12/markmap-render';
 import open from 'open';
 import { join } from 'path';
 import {

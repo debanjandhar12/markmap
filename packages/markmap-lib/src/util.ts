@@ -1,4 +1,4 @@
-import { CSSItem, JSItem, UrlBuilder } from 'markmap-common';
+import { CSSItem, JSItem, UrlBuilder } from '@debanjandhar12/markmap-common';
 
 export function patchJSItem(urlBuilder: UrlBuilder, item: JSItem) {
   if (item.type === 'script' && item.data.src) {

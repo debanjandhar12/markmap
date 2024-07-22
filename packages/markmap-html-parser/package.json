@@ -1,6 +1,6 @@
 {
-  "name": "markmap-html-parser",
-  "version": "0.17.0",
+  "name": "@debanjandhar12/markmap-html-parser",
+  "version": "0.17.0-mod.3",
   "description": "Parse HTML into markmap data structure",
   "author": "Gerald <gera2ld@live.com>",
   "license": "MIT",
@@ -42,14 +42,14 @@
     "url": "https://github.com/markmap/markmap/issues"
   },
   "devDependencies": {
-    "markmap-common": "workspace:*"
+    "@debanjandhar12/markmap-common": "workspace:*"
   },
   "dependencies": {
     "@babel/runtime": "^7.22.6",
     "cheerio": "1.0.0-rc.12"
   },
   "peerDependencies": {
-    "markmap-common": "*"
+    "@debanjandhar12/markmap-common": "*"
   },
   "jest": {
     "transform": {

@@ -1,4 +1,4 @@
-import { buildCSSItem, buildJSItem } from 'markmap-common';
+import { buildCSSItem, buildJSItem } from '@debanjandhar12/markmap-common';
 
 export const name = 'hljs';
 

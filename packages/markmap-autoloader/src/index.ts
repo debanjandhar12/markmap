@@ -4,8 +4,8 @@ import {
   buildCSSItem,
   loadCSS,
   loadJS,
-} from 'markmap-common';
-import type { Transformer } from 'markmap-lib';
+} from '@debanjandhar12/markmap-common';
+import type { Transformer } from '@debanjandhar12/markmap-lib';
 import type { AutoLoaderOptions } from './types';
 
 const enabled: Record<string, boolean> = {};

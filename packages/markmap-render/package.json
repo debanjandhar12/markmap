@@ -1,6 +1,6 @@
 {
-  "name": "markmap-render",
-  "version": "0.17.0",
+  "name": "@debanjandhar12/markmap-render",
+  "version": "0.17.0-mod.3",
   "description": "Visualize your Markdown as mindmaps with Markmap",
   "author": "Gerald <gera2ld@live.com>",
   "license": "MIT",
@@ -43,13 +43,13 @@
     "url": "https://github.com/markmap/markmap/issues"
   },
   "devDependencies": {
-    "markmap-common": "workspace:*"
+    "@debanjandhar12/markmap-common": "workspace:*"
   },
   "dependencies": {
     "@babel/runtime": "^7.22.6",
-    "markmap-view": "workspace:*"
+    "@debanjandhar12/markmap-view": "workspace:*"
   },
   "peerDependencies": {
-    "markmap-common": "*"
+    "@debanjandhar12/markmap-common": "*"
   }
 }

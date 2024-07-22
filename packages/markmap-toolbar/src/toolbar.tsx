@@ -1,5 +1,5 @@
 import { mountDom, VChildren } from '@gera2ld/jsx-dom';
-import type { Markmap } from 'markmap-view';
+import type { Markmap } from '@debanjandhar12/markmap-view';
 import './style.css';
 
 export interface IToolbarItem {

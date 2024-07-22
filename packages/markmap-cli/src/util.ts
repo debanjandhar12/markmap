@@ -1,8 +1,13 @@
 import type { ReadStream } from 'fs';
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
-import { buildCSSItem, buildJSItem, JSItem, UrlBuilder } from 'markmap-common';
-import { IAssets } from 'markmap-lib';
+import {
+  buildCSSItem,
+  buildJSItem,
+  JSItem,
+  UrlBuilder,
+} from '@debanjandhar12/markmap-common';
+import { IAssets } from '@debanjandhar12/markmap-lib';
 
 const TOOLBAR_VERSION = process.env.TOOLBAR_VERSION;
 const TOOLBAR_CSS = `markmap-toolbar@${TOOLBAR_VERSION}/dist/style.css`;

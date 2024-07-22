@@ -13,7 +13,7 @@ const external = [
 
 export default defineConfig({
   define: {
-    'process.env.TOOLBAR_VERSION': JSON.stringify(await getVersion('markmap-toolbar')),
+    'process.env.TOOLBAR_VERSION': JSON.stringify(await getVersion('@debanjandhar12/markmap-toolbar')),
   },
   build: {
     emptyOutDir: false,

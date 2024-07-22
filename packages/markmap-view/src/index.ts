@@ -1,4 +1,4 @@
-export { loadJS, loadCSS } from 'markmap-common';
+export { loadJS, loadCSS } from '@debanjandhar12/markmap-common';
 
 export * from './types';
 export * from './constants';

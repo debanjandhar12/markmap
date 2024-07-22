@@ -1,5 +1,5 @@
 import { scaleOrdinal } from 'd3';
-import { IMarkmapOptions, INode } from 'markmap-common';
+import { IMarkmapOptions, INode } from '@debanjandhar12/markmap-common';
 import { defaultOptions } from './constants';
 import { IMarkmapJSONOptions } from './types';
 

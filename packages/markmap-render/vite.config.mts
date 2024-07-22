@@ -16,7 +16,7 @@ const external = [
 const define = {
   'process.env.TEMPLATE': JSON.stringify(TEMPLATE),
   'process.env.D3_VERSION': JSON.stringify(await getVersion('d3')),
-  'process.env.VIEW_VERSION': JSON.stringify(await getVersion('markmap-view')),
+  'process.env.VIEW_VERSION': JSON.stringify(await getVersion('@debanjandhar12/markmap-view')),
 };
 
 export default defineConfig({
